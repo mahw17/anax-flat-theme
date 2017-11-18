@@ -2,6 +2,66 @@
  *  Header
  */
 
+/*Enabled in KMOM03*/
+
+.site-logo-text {
+     .column(3);
+     .push(1);
+ }
+
+
+
+ /**
+  * maxNavbar
+  */
+ @maxButtonFontSize: 2em;
+
+ @navbarItemBgColor: #424242;
+ @navbarItemColor: whitesmoke;
+
+
+
+ .navbar2 {
+     .column(16);
+
+     li {
+         .column(@columns / 5);
+         text-align: center;
+     }
+ }
+
+ .profile {
+     .column(4);
+ }
+
+ .rm-small ul {
+     .column(1);
+ }
+
+ .flash-wrap img {
+     width: 100%;
+ }
+
+ .breadcrumb-list {
+     .column(24);
+     margin-bottom: 22px;
+
+     ul {
+         margin: 0;
+         padding: 0;
+         list-style-type: none;
+     }
+
+     li {
+         display: inline;
+
+         &::after {
+             content: " » ";
+         }
+     }
+ }
+
+/* DISABLED when starting to use grids, KMOM03
 
 // Size each item in the header
 .site-logo-text,
@@ -29,3 +89,4 @@
         color: black;
     }
 }
+*/

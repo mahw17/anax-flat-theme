@@ -9,17 +9,41 @@
  */
 //@import url(some-module.less);
 
+// -----------------------------------------------------------------------------
+
 // Reset, or normalize the browser style;
 @import url(normalize.less);
 
-// Regions;
-@import url(regions.less);
+// Regions; DISABLED IN KMOM03,
+// @import url(regions.less);
+
+// VGRID; ENABLED IN KMOM03
+@import url(vgrid/grid-float.less);
+// @import url(vgrid/grid-flex.less);
+
+// Shows the grid; ENABLED IN KMOM03
+@import url(grid-helpers.less);
+
+// Layout based on vertical grid & typography; ENABLED IN KMOM03
+@import url(layout.less);
+
+// Typography; ENABLED IN KMOM03
+@import url(typo/typography.less);
+
+// -----------------------------------------------------------------------------
 
 // Header
 @import url(header.less);
 
+// Responsive menu (navbars)
+@import url(responsive-menu.less);
+
+// -----------------------------------------------------------------------------
+
 // ME-sida
 @import url(index-page.less);
+
+// -----------------------------------------------------------------------------
 
 // Byline
 @import url(byline.less);
@@ -27,8 +51,7 @@
 // Footer
 @import url(footer.less);
 
-// Responsive menu
-@import url(responsive-menu.less);
+// -----------------------------------------------------------------------------
 
 //Responsive media-queries
 @import url(media-queries.less);
