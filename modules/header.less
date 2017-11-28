@@ -2,30 +2,16 @@
  *  Header
  */
 
-/*Enabled in KMOM03*/
-
 .site-logo-text {
      .column(3);
      .push(1);
  }
 
-
-
- /**
-  * maxNavbar
-  */
- @maxButtonFontSize: 2em;
-
- @navbarItemBgColor: #424242;
- @navbarItemColor: whitesmoke;
-
-
-
  .navbar2 {
      .column(16);
 
      li {
-         .column(@columns / 5);
+         .column(@columns / 7); //5-number of menuchoices
          text-align: center;
      }
  }
@@ -34,59 +20,20 @@
      .column(4);
  }
 
- .rm-small ul {
-     .column(1);
- }
-
- .flash-wrap img {
-     width: 100%;
- }
+.flash-wrap img {
+    width: 100%;
+}
 
  .breadcrumb-list {
      .column(24);
-     margin-bottom: 22px;
 
-     ul {
-         margin: 0;
-         padding: 0;
-         list-style-type: none;
-     }
-
-     li {
-         display: inline;
-
-         &::after {
-             content: " » ";
-         }
-     }
  }
 
-/* DISABLED when starting to use grids, KMOM03
+ .site-header {
+     padding-top: @magicNumber;
+     padding-bottom: @magicNumber;
 
-// Size each item in the header
-.site-logo-text,
-.navbar2 {
-    float: left;
-    width: 40%;
-}
-
-.profile {
-    float: left;
-    width: 10%;
-}
-
-.site-header {
-    height: 80px;
-    margin-top: 1em;
-}
-
-// Site title
-.site-logo-text {
-    font-size: 2em;
-
-    a {
-        text-decoration: none;
-        color: black;
-    }
-}
-*/
+//     margin-top: @magicNumber;
+     margin-bottom: @magicNumber;
+     height: 2 * @magicNumber;
+ }

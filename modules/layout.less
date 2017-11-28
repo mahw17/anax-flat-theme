@@ -31,10 +31,6 @@
     }
 }
 
-.outer-wrap-footer {
-    padding-top: 16px;
-    padding-bottom: 16px;
-}
 
 .row {
     .row();
@@ -42,164 +38,17 @@
 }
 
 
-// .breadcrumb-list {
-//     padding-left: 0;
-//     .column(5 * @columns / 6);
-//     //.push(1 * @columns / 12);
-// }
-
-//ME-sida
-
-/**
- * Set minimum height on main content so that the byline gets on a good position
- */
-.outer-wrap-main {
-    min-height: 20em;
+.sidebar {
+    .column(6);
 }
 
-main.main.has-sidebar-left.has-sidebar {
-    //width: 50%;
-    //float: left;
-    .column(17);
-    .push(1);
+
+//Set minimum height on main content so that the byline gets on a good position
+.outer-wrap-main {
+    min-height: 20em;
 }
 
 .main {
     .column(5 * @columns / 6);
     .push(1 * @columns / 12);
-    //width: 50%;
-    //background-color: green;
-    //opacity: 0.5;
-}
-
-.next-previous {
-    .next,
-    .previous {
-        width: 50%;
-    }
-
-    .next {
-        float: right;
-        text-align: right;
-    }
-}
-
-// .main .has-sidebar-left {
-//     .column(10);
-// }
-
-
-
-//Redovisningssida
-
-.sidebar {
-    .column(6);
-}
-
-.byline {
-    .column(5 * @columns / 12);
-    .push(1 * @columns / 24);
-}
-
-.footer-column {
-    .column(@columns / 3);
-    //background-color: blue;
-    //opacity: 0.5;
-    color: white;
-    margin-bottom: @magicNumber;
-    height: 9 * @magicNumber;
-    //padding-left: 0;
-
-    a {
-        color: white;
-    }
-
-    ul {
-        //.column(4);
-        .push(1);
-    }
-
-}
-
-// ul {
-//     padding-left: (@columnWidth + (2 * @gutterWidth))px;
-// }
-
-.footer-column-x {
-    padding-left: 0;
-}
-
-.site-footer {
-    .column(@columns);
-    //background-color: brown;
-    //opacity: 0.5;
-    text-align: center;
-
-    ul {
-        padding: 0;
-    }
-}
-
-.imgAbout {
-    width: 35%;
-    float: right;
-    border: 5px solid black;
-    border-width: medium;
-    border-radius: 10px;
-    margin-left: 15px;
-}
-
-/*Grid-sidan*/
-
-body.route-grid .inner-wrap {
-    .showGrid(@gridWidth, @gridImage);
-
-    &.inner-wrap-header {
-        @gridWidth: 100%;
-        .grid(@gridWidth);
-        .showGrid(@gridWidth, @gridImage);
-    }
-}
-
-main.main.has-sidebar-right.has-sidebar {
-    //width: 50%;
-    //float: left;
-    .column(15);
-    .push(2);
-}
-
-div.sidebar.sidebar-right.has-sidebar-right {
-    .column(6);
-    .push(1);
-    padding-bottom: @magicNumber;
-    height: 192px; //8 * 24px
-    background-color: #424242;
-    color: whitesmoke;
-    text-align: center;
-
-
-    & a {
-        color: whitesmoke;
-    }
-}
-
-/*Typography-sidan*/
-
-body.route-typography .inner-wrap {
-    background-image: url(../img/horisontal-grid-24.png);
-
-
-
-}
-
-body.route-typography .outer-wrap-footer {
-
-    .footer-column {
-        color: black!important;
-    }
-
-    a {
-        color: black!important;
-    }
-
 }

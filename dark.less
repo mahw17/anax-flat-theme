@@ -1,0 +1,49 @@
+/**
+* Anax Flat theme.
+*/
+@import url(base.less);
+
+@mainColor:                 black;
+@mainBgColor:               white;
+
+/* Main navbar */
+@navbarItemBgColor:         #330506;//inherit; //#444;
+@navbarItemColor:           #B11116;//inherit;
+
+@navbarItemHoverBgColor:    #B11116;//inherit; //#666;
+@navbarItemHoverColor:      #330506;//inherit; //lighten(@navbarItemColor, 20%);
+
+// Max menu
+@maxBgColor:                #330506;//#131313;
+@mobileColor:               #B11116;
+@maxButtonColor:            #B11116;
+
+/* GRID-sida */
+@sidemenuColor:             #B11116;
+@sidemenuBgColor:           #330506;
+
+/* Footer */
+@footerBackground:          #330506;
+@footerColor:               #B11116;
+
+html {
+    background-color: black;
+    color: white;
+}
+
+.byline, .me, .imgAbout {
+    border: 5px solid white;
+    border-radius: 5px;
+}
+
+.outer-wrap-footer {
+    a {
+        color: #B11116;
+    }
+}
+
+.outer-wrap-breadcrumb, .outer-wrap-main {
+    a {
+        color: @mainBgColor;
+    }
+}

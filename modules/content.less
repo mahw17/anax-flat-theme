@@ -1,0 +1,106 @@
+
+/** --------------------------------------------------------------
+ *  Paramterar
+ */
+
+@sidemenuColor: black;
+@sidemenuBgColor: none;
+
+
+
+
+/** --------------------------------------------------------------
+ *  Me-sidan
+ */
+
+.me {
+    width: 400px;
+    float: right;
+    //border: 1px solid @ImgBorderColor;
+    //border-width: medium;
+    //border-radius: 10px;
+    margin-left: 15px;
+    margin-bottom: 10em;
+}
+
+.justify {
+    text-align: justify;
+}
+
+/** --------------------------------------------------------------
+ *  Redovisnings-sidan
+ */
+
+main.main.has-sidebar-left.has-sidebar {
+    .column(17);
+    .push(1);
+}
+
+
+.next-previous {
+    .next,
+    .previous {
+        width: 50%;
+    }
+
+    .next {
+        float: right;
+        text-align: right;
+    }
+}
+
+
+/** --------------------------------------------------------------
+ *  Om-sidan
+ */
+
+.imgAbout {
+    width: 35%;
+    float: right;
+    //border: 1px solid @ImgBorderColor;
+    //border-width: medium;
+    //border-radius: 10px;
+    margin-left: 15px;
+}
+
+/** --------------------------------------------------------------
+ *  Grid-sidan
+ */
+
+body.route-grid .inner-wrap {
+    .showGrid(@gridWidth, @gridImage);
+
+    &.inner-wrap-header {
+        @gridWidth: 100%;
+        .grid(@gridWidth);
+        .showGrid(@gridWidth, @gridImage);
+    }
+}
+
+main.main.has-sidebar-right.has-sidebar {
+    .column(15);
+    .push(2);
+}
+
+div.sidebar.sidebar-right.has-sidebar-right {
+    .column(6);
+    .push(1);
+    padding-bottom: @magicNumber;
+    height: 192px; //8 * 24px
+    background-color: @sidemenuBgColor; //#424242
+    color: @sidemenuColor;//whitesmoke;
+    text-align: center;
+
+
+    & a {
+        color: @sidemenuColor; //whitesmoke
+    }
+}
+
+/** --------------------------------------------------------------
+ *  Typography-sidan
+ */
+
+body.route-typography .inner-wrap {
+    background-image: url(../img/horisontal-grid-24.png);
+}

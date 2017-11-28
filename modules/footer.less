@@ -2,102 +2,24 @@
  *  Footer
  */
 
+/*---------------------------*/
+@footerBackground: white;
+@footerColor: black;
+/*---------------------------*/
 
- .outer-wrap-footer {
-     background-color: #424242;
-     padding-top: 24px;
-     padding-bottom: 24px;
-     font-family: 100.01%/1.5 Frutiger,"Frutiger Linotype",Univers,Calibri,"Gill Sans","Gill Sans MT","Myriad Pro",Myriad,"DejaVu Sans Condensed","Liberation Sans","Nimbus Sans L",Tahoma,Geneva,"Helvetica Neue",Helvetica,Arial,sans-serif;
-     color: whitesmoke;
-
-     li {
-         list-style-type: none;
-     }
-
-     a {
-         color: whitesmoke;
-     }
- }
-
-
-.footer-column-x {
-    padding-bottom: 0;
-    //padding-right: 1em;
-    //padding-left: 1em;
-}
-
-.footer-column, .footer-column-x {
-    height: 100%;
-}
-
-.footer-column-1, .footer-column-2 {
-    border-right: 1px solid #666;
-}
-
-.footer-column-wrapper {
-    color: #ddd;
-    border-bottom: 1px solid #666;
-    padding-bottom: 24px;
-    margin-bottom: 24px;
-    content: "";
-    display: block;
-    clear: both;
-
-}
-
-.columns {
-    overflow: auto;
-}
-// 
-// h4 {
-//     font-size: 1.25em;
-//     line-height: 1.2;
-//     font-family: Cambria,Georgia,serif;
-//     font-weight: 300;
-//     margin-top: 0;
-//     margin-bottom: 24px;
-// }
-
-
-.footer a:hover {
-    color: inherit;
-    text-decoration: none;
-}
-
-a:active, a:hover {
-    outline: 0;
-}
-
-//p {
-//    margin-top: 0;
-    //margin-bottom: 24px;
-//}
-
-.site-footer {
-    color: #aaa;
+.outer-wrap-footer {
+    background-color: @footerBackground;
+    padding-top: @magicNumber; //24px;
+    padding-bottom: @magicNumber; //24px;
+    // font-family: 100.01%/1.5 Frutiger,"Frutiger Linotype",Univers,Calibri,"Gill Sans","Gill Sans MT","Myriad Pro",Myriad,"DejaVu Sans Condensed","Liberation Sans","Nimbus Sans L",Tahoma,Geneva,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: @footerColor;
     text-align: center;
 }
 
-// .site-footer {
-//     border-top: 1px solid #666;
-// }
- //body {
-//font: 100.01%/1.5 Frutiger,"Frutiger Linotype",Univers,Calibri,"Gill Sans","Gill Sans MT","Myriad Pro",Myriad,"DejaVu Sans Condensed","Liberation Sans","Nimbus Sans L",Tahoma,Geneva,"Helvetica Neue",Helvetica,Arial,sans-serif;
-//     font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
-//     font-style: normal;
-//     font-weight: normal;
-//     font-size: 100.01%;
-//     line-height: 1.5;
-//     font-size-adjust: none;
-//     font-stretch: normal;
-//     -x-system-font: none;
-//     font-feature-settings: normal;
-//     font-language-override: normal;
-//     font-kerning: auto;
-//     font-variant-alternates: normal;
-//     font-variant-caps: normal;
-//     font-variant-east-asian: normal;
-//     font-variant-ligatures: normal;
-//     font-variant-numeric: normal;
-//     font-variant-position: normal;
-// }
+.footer-column {
+     .column(@columns / 3);
+}
+
+.site-footer {
+    .column(@columns);
+}

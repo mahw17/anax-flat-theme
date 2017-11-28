@@ -2,9 +2,18 @@
  *  Byline
  */
 
-.byline-txt {
-    margin-top: 11px;
-}
+ /*---------------------------*/
+
+ @bylineBackground:     white;
+ @bylineColor:          black;
+ /*---------------------------*/
+
+
+
+
+// .byline-txt {
+//     margin-top: 11px;
+// }
 
 .me-small {
     width: 100px;
@@ -14,15 +23,19 @@
 }
 
 .byline {
-    background-color: white;
-    width: 450px;
-    border: 5px solid black;
-    border-radius: 5px;
-    padding: 0;
+    .column(5 * @columns / 12);
+    .push(1 * @columns / 24);
+    background-color: @bylineBackground;
+    color: @bylineColor;
+    //width: 450px;
+    //border: 1px solid @bylineBorderColor; //
+    //border-radius: 5px;
+    //padding: 0;
     margin-bottom: 20px;
     margin-top: 50px;
     overflow: auto;
-    box-shadow: 3px 3px 5px black;
-    position: inherit;
-    bottom: 155px;
+    //box-shadow: 3px 3px 5px @bylineBorderColor;
+    //position: inherit;
+    //bottom: 155px;
+    padding-right: 10px;
 }
