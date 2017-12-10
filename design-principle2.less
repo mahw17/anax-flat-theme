@@ -1,0 +1,97 @@
+/**
+* Anax Flat theme.
+*/
+@import url(light.less);
+
+@mainColor:                 white;//#858484;
+@mainBgColor:               white;//#B1AEAE;
+
+/* Main navbar */
+@navbarItemBgColor:         white;//@mainBgColor;//inherit; //#444;
+@navbarItemColor:           black;//#B11116; //@mainColor;//inherit;
+
+@navbarItemHoverBgColor:    black;//inherit; //#666;
+@navbarItemHoverColor:      white; //@mainBgColor;//inherit; //lighten(@navbarItemColor, 20%);
+
+// Max menu
+@maxBgColor:                @mainBgColor;//#131313;
+@mobileColor:               @mainColor;
+@maxButtonColor:            white;//inherit;
+
+/* GRID-sida */
+@sidemenuColor:             @mainColor;
+@sidemenuBgColor:           @mainBgColor;
+
+/* Footer */
+@footerBackground:          none;//@mainBgColor;
+@footerColor:               @mainColor;
+
+html {
+    background-image: url("/../../img/kmom06/theme5-contrast-balance.png");
+    // background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}
+
+.byline, .me, .imgAbout {
+    border: 5px solid white;//#B11116;
+    mix-blend-mode: difference;
+    border-radius: 5px;
+}
+
+.site-header {
+    margins: 0;
+    padding-top: @magicNumber;
+    padding-bottom: @magicNumber;
+    background-color: none;//white;//#676767;
+    mix-blend-mode: difference;
+    //opacity: 0.65;
+
+    a {
+        color: white;//#B11116;
+        mix-blend-mode: difference;
+    }
+}
+
+h1, h2, h3, h4, p {
+    color: white;//#B11116;
+    mix-blend-mode: difference;
+}
+
+.outer-wrap-footer {
+    a {
+        color: white;//@mainColor;
+        mix-blend-mode: difference;
+    }
+}
+
+.outer-wrap-breadcrumb, .outer-wrap-main {
+    a {
+        color: white;//@mainBgColor;
+        mix-blend-mode: difference;
+    }
+}
+
+.inner-wrap {
+    &.inner-wrap-flash {
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+    }
+
+    &.inner-wrap-main {
+        max-width: 75%;
+    }
+}
+
+// h1 {
+//     background-color: #676767;
+//     width: -moz-max-content;
+//     opacity: 0.65;
+// }
+
+.site-logo-text {
+    visibility: hidden;
+}

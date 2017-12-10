@@ -1,0 +1,111 @@
+/**
+* Anax Flat theme.
+*/
+@import url(light.less);
+
+@mainColor:                 #858484;
+@mainBgColor:               #B1AEAE;
+
+/* Main navbar */
+@navbarItemBgColor:         #F3AD18;//inherit; //#444;
+@navbarItemColor:           black; //@mainColor;//inherit;
+
+@navbarItemHoverBgColor:    @mainColor;//inherit; //#666;
+@navbarItemHoverColor:      #B11116; //@mainBgColor;//inherit; //lighten(@navbarItemColor, 20%);
+
+// Max menu
+@maxBgColor:                @mainBgColor;//#131313;
+@mobileColor:               @mainColor;
+
+/* GRID-sida */
+@sidemenuColor:             @mainColor;
+@sidemenuBgColor:           @mainBgColor;
+
+/* Footer */
+@footerBackground:          @mainBgColor;
+@footerColor:               @mainColor;
+
+html {
+
+    background-color: black;
+    background-image: url("/../../img/kmom06/theme4-movement.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.inner-wrap-main p {
+    color: whitesmoke;
+    // font-weight: 300;
+}
+
+.inner-wrap {
+    &.inner-wrap-flash {
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+    }
+}
+
+.byline-txt {
+    p {
+        color: #676767;
+    }
+}
+
+.byline, .me, .imgAbout {
+    border: 5px solid #B11116;
+    border-radius: 5px;
+    opacity: 0.85;
+}
+
+.site-header {
+    margins: 0;
+    padding-top: @magicNumber;
+    padding-bottom: @magicNumber;
+    background-color: #676767;
+    opacity: 0.85;
+
+    a {
+        color: #B11116;
+    }
+}
+
+h1, h2, h3, h4 {
+    color: #B11116;
+    width: -moz-max-content;
+}
+
+.outer-wrap-footer {
+
+    a {
+        color: @mainColor;
+    }
+}
+
+.outer-wrap-breadcrumb, .outer-wrap-main {
+    a {
+        color: @mainBgColor;
+    }
+}
+
+.inner-wrap {
+    &.inner-wrap-flash {
+        width: 100%;
+        max-width: 100%;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+    }
+}
+
+// h1 {
+//     background-color: #676767;
+//     width: -moz-max-content;
+//     opacity: 0.85;
+// }
+
+.site-logo-text {
+    visibility: hidden;
+}
